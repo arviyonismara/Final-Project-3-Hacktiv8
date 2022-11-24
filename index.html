@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Section Questions -->
+    <section class="container">
+      <div class="container-question row justify-content-evenly">
+        <div class="kolom-1-question col-md-6">
+          <p class="judul-kolom-1-question">Questions, Comments, Concerns?</p>
+          <p class="title-kolom-1-question display-1">
+            We’d love to
+            <span class="hear">hear</span>
+            from you!
+          </p>
+        </div>
+        <div class="kolom-2-question col-md-6">
+          <div class="mb-3">
+            <label
+              for="exampleFormControlInput1"
+              class="form-label-question form-label"
+            >
+              Your Email Address
+            </label>
+            <input
+              type="email"
+              class="text-placeholder-question form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword5" class="form-label-question form-label">
+              Subject
+            </label>
+            <input
+              type="password"
+              id="inputPassword5"
+              class="form-control text-placeholder-question"
+              aria-describedby="passwordHelpBlock"
+              placeholder="Question about your article"
+            />
+          </div>
+          <div class="mb-3">
+            <label
+              for="exampleFormControlTextarea1"
+              class="form-label-question form-label"
+            >
+              Message
+            </label>
+            <textarea
+              class="form-control text-placeholder-question"
+              id="exampleFormControlTextarea1"
+              rows="8"
+              placeholder="Your message starts with…"
+            ></textarea>
+          </div>
+          <div class="d-grid gap-2 col-12 mx-auto">
+            <button
+              class="button-kolom-2-section-D btn btn-primary"
+              type="button"
+            >
+              Send a Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Footer -->
+    <footer>
+      <div class="container-footer col-12">
+        <h3 class="title-footer container pt-2 pb-2">
+          2020 © All rights reserved by Your company name
+        </h3>
+      </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
