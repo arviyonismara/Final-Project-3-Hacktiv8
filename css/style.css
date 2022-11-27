@@ -1,3 +1,125 @@
+.body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Basic';
+}
+
+/* About Us */
+.circle{
+  width: 276px;
+  height: 276px;
+  margin-left: -240px;
+  background-color: #F0F3FA;
+  border-radius: 50%;
+}
+.title{
+  margin: auto;
+}
+h2{
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.title p{
+  font-family: 'Basic';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+
+}
+
+.line{
+  width: 100px;
+  height: 1px;
+  margin: 0 auto 20px;
+  background: #E73587;
+  border: 2px solid #E73587;
+  margin-top: -10px;
+}
+
+/* Services */
+.services{
+  margin-top: 59px;
+}
+/* .arrow{
+  height: 76px;
+  width: 76px;
+  left: 1328px;
+  top: 1411px;
+  border-radius: 50%;
+  background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+  border: 2px solid #FFFFFF;
+}
+.arrow img{
+  margin: auto;
+  line-height: 76px;
+} */
+.container-services{
+  margin-top: 49px;
+  /* background: linear-gradient(180deg, #fff 50%, #020E35 50%); */
+}
+.card-container{
+  flex-direction: row;
+}
+.card-services-1, .card-services-2, .card-services-3{
+  height: 583px;
+  width: 377px;
+  border-radius: 0px;
+}
+.card-services-1{
+  background: #FDF8E3;
+}
+.card-services-2{
+  background: #F0F3FA;
+}
+.card-services-3{
+  background: #FEEFF0;
+}
+.card-image{
+  height: 284px;
+  width: 319px;
+  border-radius: 0px;
+}
+
+.card-text{
+  margin-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.h5{
+  font-family: 'Basic';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+.services p{
+  margin-top: 22px;
+  font-family: Basic;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+.card-button{
+  height: 40px;
+  width: 140px;
+  background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+  font-family: 'Basic';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+}
+
 /* Section Question */
 /* Kolom 1 */
 .container-question {
