@@ -243,3 +243,210 @@ h2{
   line-height: 15px;
   color: #ffffff;
 }
+
+/* Our Work */
+.our{
+  background: rgba(2, 14, 53, 1);
+  color: white;
+}
+.our-work{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.title h1{
+  font-family: Basic;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0px;
+  color: white;
+}
+.garis{
+  width: 100px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: rgba(231, 53, 135, 1);
+  margin-top: 55px;
+  margin-left: -130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.card-share{
+  display: flex;
+  width: 1180px;
+  height: 390px;
+  margin: 70px 0;
+}
+.card-1, .card-3{
+  flex-direction: row;
+}
+.card-2, .card-4{
+  flex-direction: row-reverse;
+}
+.images{
+  height: 390px;
+  width: 587px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.image1{
+  background: rgba(240, 149, 50, 1);
+}
+.image2{
+  background: rgba(140, 50, 240, 1);
+}
+.image3{
+  background: rgba(231, 53, 135, 1);
+}
+.image4{
+  background: rgba(50, 214, 240, 1);
+}
+.image2 img{
+  margin-top: 25px;
+}
+.image3 img{
+  margin-top: 65px;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.see{
+  height: 40px;
+  width: 140px;
+  color: white;
+  background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+  font-family: Basic;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  border: none;
+  
+}
+.text-content{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.text-content h2{
+  font-family: Basic;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0px;
+  margin-bottom: 16px;
+}
+.text-content h6{
+  font-family: Basic;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+}
+.text-content p {
+  font-family: Basic;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .card-share{
+      width: 696px;
+      height: 250px;
+      margin: 20px 0;
+  }
+  .title{
+      margin-bottom: 50px;
+  }
+  .garis{
+      height: 2px;
+  }
+  .images{
+      width: 300px;
+      height: 250px;
+  }
+  .text-content{
+      height: 250px;
+  }
+  .image1 img{
+      width: 250px;
+      height: 200px;
+  }
+  .text-content h2{
+      font-size: 20px;
+  }
+  .text-content h6{
+      font-size: 14px;
+      margin-bottom: 25px;
+  }
+  .text-content p{
+      font-size: 10px;
+  }
+
+  .image2 img{
+      width: 220px;
+      height: 200px;
+      margin-top: 50px;
+  }
+  .image3 img{
+      width: 300px;
+      height: 170px;
+      margin-top: 14px;
+  }
+  .image4 img{
+      width: 290px;
+      height: 170px;
+      margin-top: 10px;
+  }
+  .see{
+      width: 120px;
+      height: 40px;
+      font-size: 10px;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .card-share{
+      width: 404px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+  }
+  .card-1, .card-2, .card-3, .card-4{
+      flex-direction: column;
+  }
+  .title h1{
+      font-size: 40px;
+  }
+  .text-content{
+      margin-top: 5px;
+      width: 400px;
+      height: auto;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+  .text-content h2{
+      margin-bottom: 3px;
+      text-align: center ;
+  }
+  .text-content h6{
+      margin-bottom: 5px;
+  }
+  .card-text{
+      font-size: 10px;
+  }
+  .card-2, .card-4{
+      margin: 0;
+  }
+  .see{
+      margin-top: 20px;
+  }
+}
