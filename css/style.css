@@ -55,8 +55,8 @@
   color: #020E35;
 }
 .banner-tag .card-button{
-  position: absolute;
-  top: 530px;
+  position: relative;
+  top: 160px;
 }
 .img-hero{
   width: 45vw;
@@ -66,12 +66,47 @@
   flex: 0 0 50%;
   visibility: visible;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1200px) {
+  .img-hero {
+    max-width: auto;
+    height: auto;
+    left: 5px;
+    top: auto;
+  }
+  .banner-tag h1{
+    font-size: 12vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .nav-link{
     z-index: 3;
   }
   .img-hero {
     visibility: hidden;
+  }
+  .banner-tag h1{
+    font-size: 10vh;
+    text-align: center;
+    margin-left: auto;
+  }
+  .banner-tag .card-button{
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-tag h1{
+    font-size: 67px;
+    text-align: left;
+    margin-left: 0rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .banner-tag h1{
+    max-width: 300px;
+    font-size: 65px;
+    text-align: left;
+    margin-left: 0rem;
   }
 }
 /* About Us */
