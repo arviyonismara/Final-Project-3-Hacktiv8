@@ -11,7 +11,7 @@
 }
 /* navbar */
 .navbar{
-  position: absolute;
+  position: relative;
   align-items:stretch;
   font-family: 'Basic';
   font-style: normal;
@@ -37,40 +37,20 @@
   text-align: center;
 }
 /* banner */
-.banner{
-  width: 100%;
-  height: 611px;
-  position: relative;
-}
-.banner .container{
-  position: relative;
-    height: 575px;
-    width: 1240px;
-    /* margin: 50px auto; */
-}
-.banner-tag h1{
-  position: relative;
-  width: 531px;
-  height: 366px;
-  top: 200px;
-  font-family: 'Basic';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13vh;
+.hero-title{
+  font-family: Basic;
+  font-size: 5vw;
+  /* font-weight: 400; */
   line-height: 122px;
-  color: #020E35;
+  letter-spacing: 0px;
+  text-align: left;
 }
-.banner-tag .card-button{
-  position: relative;
-  top: 160px;
-}
-.img-hero{
-  width: 45vw;
-  height: 75vh;
-  margin-left: 51.2vw;
-  top: 18.35vh;
-  flex: 0 0 50%;
-  visibility: visible;
+.hero-button{
+  width: 140px;
+  height: 40px;
+  background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+  font-size: 10px;
+  color: #fff;
 }
 
 /* About Us */
@@ -376,7 +356,7 @@ h2{
   line-height: 20px;
   letter-spacing: 0px;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .slide-content{
     margin: 0 10px;
   }
@@ -438,7 +418,7 @@ h2{
       font-size: 10px;
   }
 }
-@media only screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .card-share{
       width: 404px;
       display: flex;
@@ -475,92 +455,5 @@ h2{
   }
   .see{
       margin-top: 20px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .img-hero {
-    max-width: auto;
-    height: auto;
-    left: 5px;
-    top: auto;
-  }
-  .banner-tag h1{
-    font-size: 12vh;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .nav-link{
-    z-index: 3;
-  }
-  .img-hero {
-    visibility: hidden;
-  }
-  .banner-tag h1{
-    font-size: 10vh;
-    text-align: center;
-    margin-left: auto;
-  }
-  .banner-tag .card-button{
-    align-items: center;
-  }
-}
-@media screen and (max-width: 600px) {
-  .banner-tag h1{
-    font-size: 67px;
-    text-align: left;
-    margin-left: 0rem;
-  }
-}
-@media screen and (max-width: 380px) {
-  .banner-tag h1{
-    max-width: 300px;
-    font-size: 65px;
-    text-align: left;
-    margin-left: 0rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .img-hero {
-    max-width: auto;
-    height: auto;
-    left: 5px;
-    top: auto;
-  }
-  .banner-tag h1{
-    font-size: 12vh;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .nav-link{
-    z-index: 3;
-  }
-  .img-hero {
-    visibility: hidden;
-  }
-  .banner-tag h1{
-    font-size: 10vh;
-    text-align: center;
-    margin-left: auto;
-  }
-  .banner-tag .card-button{
-    align-items: center;
-  }
-}
-@media screen and (max-width: 600px) {
-  .banner-tag h1{
-    font-size: 67px;
-    text-align: left;
-    margin-left: 0rem;
-  }
-}
-@media screen and (max-width: 380px) {
-  .banner-tag h1{
-    max-width: 300px;
-    font-size: 65px;
-    text-align: left;
-    margin-left: 0rem;
   }
 }
