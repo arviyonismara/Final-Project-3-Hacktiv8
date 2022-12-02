@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 .body{
   padding: 0;
   margin: 0;
@@ -66,49 +72,7 @@
   flex: 0 0 50%;
   visibility: visible;
 }
-@media screen and (max-width: 1200px) {
-  .img-hero {
-    max-width: auto;
-    height: auto;
-    left: 5px;
-    top: auto;
-  }
-  .banner-tag h1{
-    font-size: 12vh;
-  }
-}
 
-@media screen and (max-width: 900px) {
-  .nav-link{
-    z-index: 3;
-  }
-  .img-hero {
-    visibility: hidden;
-  }
-  .banner-tag h1{
-    font-size: 10vh;
-    text-align: center;
-    margin-left: auto;
-  }
-  .banner-tag .card-button{
-    align-items: center;
-  }
-}
-@media screen and (max-width: 600px) {
-  .banner-tag h1{
-    font-size: 67px;
-    text-align: left;
-    margin-left: 0rem;
-  }
-}
-@media screen and (max-width: 380px) {
-  .banner-tag h1{
-    max-width: 300px;
-    font-size: 65px;
-    text-align: left;
-    margin-left: 0rem;
-  }
-}
 /* About Us */
 .circle{
   width: 276px;
@@ -148,27 +112,19 @@ h2{
 
 /* Services */
 .services{
-  margin-top: 59px;
+  background: linear-gradient(180deg, #ffff 60%, #020E35 60%);
 }
-/* .arrow{
-  height: 76px;
-  width: 76px;
-  left: 1328px;
-  top: 1411px;
-  border-radius: 50%;
-  background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
-  border: 2px solid #FFFFFF;
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
 }
-.arrow img{
-  margin: auto;
-  line-height: 76px;
-} */
-.container-services{
-  margin-top: 49px;
-  /* background: linear-gradient(180deg, #fff 50%, #020E35 50%); */
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
 }
-.card-container{
-  flex-direction: row;
+.card{
+  background-color: #FFF;
 }
 .card-services-1, .card-services-2, .card-services-3{
   height: 583px;
@@ -223,6 +179,35 @@ h2{
   text-align: center;
   border: none;
   color: #ffffff;
+  margin: 20px auto;
+}
+
+.swiper-navBtn{
+  width: 76px;
+  height: 76px;
+  background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+  border: 2px solid #FFFFFF;
+  transition: color 0.3s ease;
+  border-radius: 50%;
+  color: #ffff;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background: linear-gradient(270deg, #7700ff 0%, #ff0077 100%);
 }
 
 /* Section Question */
@@ -392,6 +377,13 @@ h2{
   letter-spacing: 0px;
 }
 @media only screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+
   .card-share{
       width: 696px;
       height: 250px;
@@ -446,7 +438,7 @@ h2{
       font-size: 10px;
   }
 }
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 576px) {
   .card-share{
       width: 404px;
       display: flex;
@@ -483,5 +475,92 @@ h2{
   }
   .see{
       margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .img-hero {
+    max-width: auto;
+    height: auto;
+    left: 5px;
+    top: auto;
+  }
+  .banner-tag h1{
+    font-size: 12vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-link{
+    z-index: 3;
+  }
+  .img-hero {
+    visibility: hidden;
+  }
+  .banner-tag h1{
+    font-size: 10vh;
+    text-align: center;
+    margin-left: auto;
+  }
+  .banner-tag .card-button{
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-tag h1{
+    font-size: 67px;
+    text-align: left;
+    margin-left: 0rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .banner-tag h1{
+    max-width: 300px;
+    font-size: 65px;
+    text-align: left;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .img-hero {
+    max-width: auto;
+    height: auto;
+    left: 5px;
+    top: auto;
+  }
+  .banner-tag h1{
+    font-size: 12vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-link{
+    z-index: 3;
+  }
+  .img-hero {
+    visibility: hidden;
+  }
+  .banner-tag h1{
+    font-size: 10vh;
+    text-align: center;
+    margin-left: auto;
+  }
+  .banner-tag .card-button{
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-tag h1{
+    font-size: 67px;
+    text-align: left;
+    margin-left: 0rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .banner-tag h1{
+    max-width: 300px;
+    font-size: 65px;
+    text-align: left;
+    margin-left: 0rem;
   }
 }
