@@ -39,7 +39,7 @@
 /* banner */
 .hero-title{
   font-family: Basic;
-  font-size: 5vw;
+  font-size: 97px;
   /* font-weight: 400; */
   line-height: 122px;
   letter-spacing: 0px;
@@ -95,7 +95,7 @@ h2{
   background: linear-gradient(180deg, #ffff 60%, #020E35 60%);
 }
 .slide-container{
-  max-width: 1120px;
+  max-width: 1200px;
   width: 100%;
   padding: 40px 0;
 }
@@ -124,6 +124,7 @@ h2{
   height: 284px;
   width: 319px;
   border-radius: 0px;
+  margin: 5px auto;
 }
 
 .card-text{
@@ -357,6 +358,9 @@ h2{
   letter-spacing: 0px;
 }
 @media screen and (max-width: 768px) {
+  .hero-title{
+    font-size: 80px;
+  }
   .slide-content{
     margin: 0 10px;
   }
@@ -419,6 +423,18 @@ h2{
   }
 }
 @media screen and (max-width: 576px) {
+  .our-title{
+    text-align: center;
+  }
+  .banner-img{
+    display: none;
+  }
+  .hero-text{
+    margin: 40px auto;
+  }
+  .hero-title{
+    font-size: 50px;
+  }
   .card-share{
       width: 404px;
       display: flex;
